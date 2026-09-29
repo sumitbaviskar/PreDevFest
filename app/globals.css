@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-space-grotesk: var(--font-space-grotesk), sans-serif;
+  --font-jetbrains-mono: var(--font-jetbrains-mono), monospace;
+
+  --color-frame: #111111;
+  --color-canvas: #f8f4ec;
+  --color-panel: #ffffff;
+  --color-subtle: #e6e6e2;
+  --color-accent: #edb13e;
+  --color-mustard: #edb13e;
+  --color-ink: #141414;
+  --color-lavender: #eff2fb;
+  --color-pale-yellow: #f7e3a8;
+  --color-google-blue: #4c80f0;
+  --color-google-red: #d9503f;
+  --color-google-green: #4fa35a;
+
+  --shadow-neo: 4px 4px 0px #141414;
+  --shadow-neo-sm: 2px 2px 0px #141414;
+  --shadow-neo-active: 0px 0px 0px #141414;
+}
+
+:root {
+  --color-frame: #111111;
+  --color-canvas: #f8f4ec;
+  --color-panel: #ffffff;
+  --color-subtle: #e6e6e2;
+  --color-accent: #edb13e;
+}
+
+body {
+  background-color: #f8f4ec;
+  background-image: 
+    linear-gradient(to right, rgba(20, 20, 20, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 20, 20, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: #141414;
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+/* Custom drafting desk thin scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f4ec;
+  border-left: 1px solid #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #edb13e;
+}
+
+/* Neo-brutalist tactile utilities */
+.neo-border {
+  border: 2px solid #141414;
+}
+
+.neo-border-1 {
+  border: 1px solid #141414;
+}
+
+.neo-shadow {
+  box-shadow: 4px 4px 0px #141414;
+}
+
+.neo-shadow-sm {
+  box-shadow: 2px 2px 0px #141414;
+}
+
+.neo-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px #141414;
+}
